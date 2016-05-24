@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84F822A11CF3E20C00DF0D19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F822A01CF3E20C00DF0D19 /* AppDelegate.swift */; };
+		84F822A31CF3E20C00DF0D19 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F822A21CF3E20C00DF0D19 /* RootViewController.swift */; };
+		84F822A51CF3E20C00DF0D19 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F822A41CF3E20C00DF0D19 /* DataViewController.swift */; };
+		84F822A71CF3E20C00DF0D19 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F822A61CF3E20C00DF0D19 /* ModelController.swift */; };
+		84F822AA1CF3E20C00DF0D19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F822A81CF3E20C00DF0D19 /* Main.storyboard */; };
+		84F822AC1CF3E20C00DF0D19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F822AB1CF3E20C00DF0D19 /* Assets.xcassets */; };
+		84F822AF1CF3E20C00DF0D19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F822AD1CF3E20C00DF0D19 /* LaunchScreen.storyboard */; };
+		84F822BA1CF3E20C00DF0D19 /* BuddyGuardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F822B91CF3E20C00DF0D19 /* BuddyGuardTests.swift */; };
+		84F822C51CF3E20C00DF0D19 /* BuddyGuardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F822C41CF3E20C00DF0D19 /* BuddyGuardUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84F822B61CF3E20C00DF0D19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F822951CF3E20C00DF0D19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84F8229C1CF3E20C00DF0D19;
+			remoteInfo = BuddyGuard;
+		};
+		84F822C11CF3E20C00DF0D19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F822951CF3E20C00DF0D19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84F8229C1CF3E20C00DF0D19;
+			remoteInfo = BuddyGuard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84F8229D1CF3E20C00DF0D19 /* BuddyGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuddyGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F822A01CF3E20C00DF0D19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84F822A21CF3E20C00DF0D19 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		84F822A41CF3E20C00DF0D19 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		84F822A61CF3E20C00DF0D19 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		84F822A91CF3E20C00DF0D19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84F822AB1CF3E20C00DF0D19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84F822AE1CF3E20C00DF0D19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84F822B01CF3E20C00DF0D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F822B51CF3E20C00DF0D19 /* BuddyGuardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuddyGuardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F822B91CF3E20C00DF0D19 /* BuddyGuardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyGuardTests.swift; sourceTree = "<group>"; };
+		84F822BB1CF3E20C00DF0D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84F822C01CF3E20C00DF0D19 /* BuddyGuardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuddyGuardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F822C41CF3E20C00DF0D19 /* BuddyGuardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyGuardUITests.swift; sourceTree = "<group>"; };
+		84F822C61CF3E20C00DF0D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84F8229A1CF3E20C00DF0D19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F822B21CF3E20C00DF0D19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F822BD1CF3E20C00DF0D19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84F822941CF3E20C00DF0D19 = {
+			isa = PBXGroup;
+			children = (
+				84F8229F1CF3E20C00DF0D19 /* BuddyGuard */,
+				84F822B81CF3E20C00DF0D19 /* BuddyGuardTests */,
+				84F822C31CF3E20C00DF0D19 /* BuddyGuardUITests */,
+				84F8229E1CF3E20C00DF0D19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84F8229E1CF3E20C00DF0D19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84F8229D1CF3E20C00DF0D19 /* BuddyGuard.app */,
+				84F822B51CF3E20C00DF0D19 /* BuddyGuardTests.xctest */,
+				84F822C01CF3E20C00DF0D19 /* BuddyGuardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84F8229F1CF3E20C00DF0D19 /* BuddyGuard */ = {
+			isa = PBXGroup;
+			children = (
+				84F822A01CF3E20C00DF0D19 /* AppDelegate.swift */,
+				84F822A21CF3E20C00DF0D19 /* RootViewController.swift */,
+				84F822A41CF3E20C00DF0D19 /* DataViewController.swift */,
+				84F822A61CF3E20C00DF0D19 /* ModelController.swift */,
+				84F822A81CF3E20C00DF0D19 /* Main.storyboard */,
+				84F822AB1CF3E20C00DF0D19 /* Assets.xcassets */,
+				84F822AD1CF3E20C00DF0D19 /* LaunchScreen.storyboard */,
+				84F822B01CF3E20C00DF0D19 /* Info.plist */,
+			);
+			path = BuddyGuard;
+			sourceTree = "<group>";
+		};
+		84F822B81CF3E20C00DF0D19 /* BuddyGuardTests */ = {
+			isa = PBXGroup;
+			children = (
+				84F822B91CF3E20C00DF0D19 /* BuddyGuardTests.swift */,
+				84F822BB1CF3E20C00DF0D19 /* Info.plist */,
+			);
+			path = BuddyGuardTests;
+			sourceTree = "<group>";
+		};
+		84F822C31CF3E20C00DF0D19 /* BuddyGuardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84F822C41CF3E20C00DF0D19 /* BuddyGuardUITests.swift */,
+				84F822C61CF3E20C00DF0D19 /* Info.plist */,
+			);
+			path = BuddyGuardUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84F8229C1CF3E20C00DF0D19 /* BuddyGuard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F822C91CF3E20C00DF0D19 /* Build configuration list for PBXNativeTarget "BuddyGuard" */;
+			buildPhases = (
+				84F822991CF3E20C00DF0D19 /* Sources */,
+				84F8229A1CF3E20C00DF0D19 /* Frameworks */,
+				84F8229B1CF3E20C00DF0D19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BuddyGuard;
+			productName = BuddyGuard;
+			productReference = 84F8229D1CF3E20C00DF0D19 /* BuddyGuard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84F822B41CF3E20C00DF0D19 /* BuddyGuardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F822CC1CF3E20C00DF0D19 /* Build configuration list for PBXNativeTarget "BuddyGuardTests" */;
+			buildPhases = (
+				84F822B11CF3E20C00DF0D19 /* Sources */,
+				84F822B21CF3E20C00DF0D19 /* Frameworks */,
+				84F822B31CF3E20C00DF0D19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84F822B71CF3E20C00DF0D19 /* PBXTargetDependency */,
+			);
+			name = BuddyGuardTests;
+			productName = BuddyGuardTests;
+			productReference = 84F822B51CF3E20C00DF0D19 /* BuddyGuardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84F822BF1CF3E20C00DF0D19 /* BuddyGuardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F822CF1CF3E20C00DF0D19 /* Build configuration list for PBXNativeTarget "BuddyGuardUITests" */;
+			buildPhases = (
+				84F822BC1CF3E20C00DF0D19 /* Sources */,
+				84F822BD1CF3E20C00DF0D19 /* Frameworks */,
+				84F822BE1CF3E20C00DF0D19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84F822C21CF3E20C00DF0D19 /* PBXTargetDependency */,
+			);
+			name = BuddyGuardUITests;
+			productName = BuddyGuardUITests;
+			productReference = 84F822C01CF3E20C00DF0D19 /* BuddyGuardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84F822951CF3E20C00DF0D19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Stewart Boyd";
+				TargetAttributes = {
+					84F8229C1CF3E20C00DF0D19 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					84F822B41CF3E20C00DF0D19 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 84F8229C1CF3E20C00DF0D19;
+					};
+					84F822BF1CF3E20C00DF0D19 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 84F8229C1CF3E20C00DF0D19;
+					};
+				};
+			};
+			buildConfigurationList = 84F822981CF3E20C00DF0D19 /* Build configuration list for PBXProject "BuddyGuard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84F822941CF3E20C00DF0D19;
+			productRefGroup = 84F8229E1CF3E20C00DF0D19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84F8229C1CF3E20C00DF0D19 /* BuddyGuard */,
+				84F822B41CF3E20C00DF0D19 /* BuddyGuardTests */,
+				84F822BF1CF3E20C00DF0D19 /* BuddyGuardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84F8229B1CF3E20C00DF0D19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F822AF1CF3E20C00DF0D19 /* LaunchScreen.storyboard in Resources */,
+				84F822AC1CF3E20C00DF0D19 /* Assets.xcassets in Resources */,
+				84F822AA1CF3E20C00DF0D19 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F822B31CF3E20C00DF0D19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F822BE1CF3E20C00DF0D19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84F822991CF3E20C00DF0D19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F822A31CF3E20C00DF0D19 /* RootViewController.swift in Sources */,
+				84F822A71CF3E20C00DF0D19 /* ModelController.swift in Sources */,
+				84F822A51CF3E20C00DF0D19 /* DataViewController.swift in Sources */,
+				84F822A11CF3E20C00DF0D19 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F822B11CF3E20C00DF0D19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F822BA1CF3E20C00DF0D19 /* BuddyGuardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F822BC1CF3E20C00DF0D19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F822C51CF3E20C00DF0D19 /* BuddyGuardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84F822B71CF3E20C00DF0D19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84F8229C1CF3E20C00DF0D19 /* BuddyGuard */;
+			targetProxy = 84F822B61CF3E20C00DF0D19 /* PBXContainerItemProxy */;
+		};
+		84F822C21CF3E20C00DF0D19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84F8229C1CF3E20C00DF0D19 /* BuddyGuard */;
+			targetProxy = 84F822C11CF3E20C00DF0D19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84F822A81CF3E20C00DF0D19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F822A91CF3E20C00DF0D19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84F822AD1CF3E20C00DF0D19 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F822AE1CF3E20C00DF0D19 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84F822C71CF3E20C00DF0D19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84F822C81CF3E20C00DF0D19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84F822CA1CF3E20C00DF0D19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BuddyGuard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BuddyGuard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84F822CB1CF3E20C00DF0D19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BuddyGuard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BuddyGuard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		84F822CD1CF3E20C00DF0D19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BuddyGuardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BuddyGuardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BuddyGuard.app/BuddyGuard";
+			};
+			name = Debug;
+		};
+		84F822CE1CF3E20C00DF0D19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BuddyGuardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BuddyGuardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BuddyGuard.app/BuddyGuard";
+			};
+			name = Release;
+		};
+		84F822D01CF3E20C00DF0D19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BuddyGuardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BuddyGuardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BuddyGuard;
+			};
+			name = Debug;
+		};
+		84F822D11CF3E20C00DF0D19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BuddyGuardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BuddyGuardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BuddyGuard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84F822981CF3E20C00DF0D19 /* Build configuration list for PBXProject "BuddyGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F822C71CF3E20C00DF0D19 /* Debug */,
+				84F822C81CF3E20C00DF0D19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F822C91CF3E20C00DF0D19 /* Build configuration list for PBXNativeTarget "BuddyGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F822CA1CF3E20C00DF0D19 /* Debug */,
+				84F822CB1CF3E20C00DF0D19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		84F822CC1CF3E20C00DF0D19 /* Build configuration list for PBXNativeTarget "BuddyGuardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F822CD1CF3E20C00DF0D19 /* Debug */,
+				84F822CE1CF3E20C00DF0D19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		84F822CF1CF3E20C00DF0D19 /* Build configuration list for PBXNativeTarget "BuddyGuardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F822D01CF3E20C00DF0D19 /* Debug */,
+				84F822D11CF3E20C00DF0D19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84F822951CF3E20C00DF0D19 /* Project object */;
+}
