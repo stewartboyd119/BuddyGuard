@@ -8,15 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		84F822A11CF3E20C00DF0D19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F822A01CF3E20C00DF0D19 /* AppDelegate.swift */; };
-		84F822A31CF3E20C00DF0D19 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F822A21CF3E20C00DF0D19 /* RootViewController.swift */; };
-		84F822A51CF3E20C00DF0D19 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F822A41CF3E20C00DF0D19 /* DataViewController.swift */; };
-		84F822A71CF3E20C00DF0D19 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F822A61CF3E20C00DF0D19 /* ModelController.swift */; };
 		84F822AA1CF3E20C00DF0D19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F822A81CF3E20C00DF0D19 /* Main.storyboard */; };
 		84F822AC1CF3E20C00DF0D19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F822AB1CF3E20C00DF0D19 /* Assets.xcassets */; };
 		84F822AF1CF3E20C00DF0D19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F822AD1CF3E20C00DF0D19 /* LaunchScreen.storyboard */; };
 		84F822BA1CF3E20C00DF0D19 /* BuddyGuardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F822B91CF3E20C00DF0D19 /* BuddyGuardTests.swift */; };
 		84F822C51CF3E20C00DF0D19 /* BuddyGuardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F822C41CF3E20C00DF0D19 /* BuddyGuardUITests.swift */; };
 		84F822D31CF3E2F200DF0D19 /* readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 84F822D21CF3E2F200DF0D19 /* readme.md */; };
+		D094A8261CF7BF64000E5A68 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D094A8251CF7BF64000E5A68 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,9 +37,6 @@
 /* Begin PBXFileReference section */
 		84F8229D1CF3E20C00DF0D19 /* BuddyGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuddyGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F822A01CF3E20C00DF0D19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84F822A21CF3E20C00DF0D19 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		84F822A41CF3E20C00DF0D19 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		84F822A61CF3E20C00DF0D19 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		84F822A91CF3E20C00DF0D19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84F822AB1CF3E20C00DF0D19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84F822AE1CF3E20C00DF0D19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +48,7 @@
 		84F822C41CF3E20C00DF0D19 /* BuddyGuardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyGuardUITests.swift; sourceTree = "<group>"; };
 		84F822C61CF3E20C00DF0D19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84F822D21CF3E2F200DF0D19 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
+		D094A8251CF7BF64000E5A68 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				84F822A01CF3E20C00DF0D19 /* AppDelegate.swift */,
-				84F822A21CF3E20C00DF0D19 /* RootViewController.swift */,
-				84F822A41CF3E20C00DF0D19 /* DataViewController.swift */,
-				84F822A61CF3E20C00DF0D19 /* ModelController.swift */,
 				84F822A81CF3E20C00DF0D19 /* Main.storyboard */,
+				D094A8251CF7BF64000E5A68 /* MainViewController.swift */,
 				84F822AB1CF3E20C00DF0D19 /* Assets.xcassets */,
 				84F822AD1CF3E20C00DF0D19 /* LaunchScreen.storyboard */,
 				84F822B01CF3E20C00DF0D19 /* Info.plist */,
@@ -265,9 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84F822A31CF3E20C00DF0D19 /* RootViewController.swift in Sources */,
-				84F822A71CF3E20C00DF0D19 /* ModelController.swift in Sources */,
-				84F822A51CF3E20C00DF0D19 /* DataViewController.swift in Sources */,
+				D094A8261CF7BF64000E5A68 /* MainViewController.swift in Sources */,
 				84F822D31CF3E2F200DF0D19 /* readme.md in Sources */,
 				84F822A11CF3E20C00DF0D19 /* AppDelegate.swift in Sources */,
 			);
@@ -496,6 +488,7 @@
 				84F822CB1CF3E20C00DF0D19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84F822CC1CF3E20C00DF0D19 /* Build configuration list for PBXNativeTarget "BuddyGuardTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +497,7 @@
 				84F822CE1CF3E20C00DF0D19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84F822CF1CF3E20C00DF0D19 /* Build configuration list for PBXNativeTarget "BuddyGuardUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +506,7 @@
 				84F822D11CF3E20C00DF0D19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
