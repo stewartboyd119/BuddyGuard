@@ -7,14 +7,17 @@
 //
 
 import UIKit
+import AVFoundation
 
-class MainViewController: UIViewController, UINavigationControllerDelegate {
+class MainViewController: UIViewController, UINavigationControllerDelegate, AVAudioPlayerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         navigationController?.delegate = self;
+        let alarm = Alarm(volume: 1.0);
+        alarm.play()
         
     }
 
@@ -42,7 +45,11 @@ class MainViewController: UIViewController, UINavigationControllerDelegate {
         // Pass the selected object to the new view controller.
     }
     */
-    
+    func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) {
+        if (flag == true){
+            print("Completed playing audio player");
+        }
+    }
     
     
 
