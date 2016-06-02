@@ -55,6 +55,13 @@
                                     <segue destination="WxR-eF-Ph7" kind="show" id="HEu-x0-MhM"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsG-3T-oLp">
+                                <rect key="frame" x="321" y="322" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="testClick:" destination="f0Z-Rd-XW3" eventType="touchUpInside" id="TPZ-OP-NNk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -66,6 +73,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="cxC-cO-nMu"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="testButton" destination="rsG-3T-oLp" id="aTe-db-dy4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kbg-co-Qe0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

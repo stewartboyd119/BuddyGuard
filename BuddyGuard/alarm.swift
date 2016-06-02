@@ -30,10 +30,11 @@ class Alarm{
         newPlayer?.volume = self.volume;
         newPlayer?.prepareToPlay()
     }
-    func play(){
+    func play() -> Bool?{
         print("begin playing");
-        newPlayer?.play()
+        let played = newPlayer?.play()
         print("end call to play");
+        return played
     }
 
 }
