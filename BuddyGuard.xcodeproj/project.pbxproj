@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		844FF5DD1D012116009F8BE3 /* test.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 844FF5DC1D012116009F8BE3 /* test.mp3 */; };
 		84F822A11CF3E20C00DF0D19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F822A01CF3E20C00DF0D19 /* AppDelegate.swift */; };
 		84F822AA1CF3E20C00DF0D19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F822A81CF3E20C00DF0D19 /* Main.storyboard */; };
 		84F822AC1CF3E20C00DF0D19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F822AB1CF3E20C00DF0D19 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		844FF5DC1D012116009F8BE3 /* test.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = test.mp3; sourceTree = "<group>"; };
 		84F8229D1CF3E20C00DF0D19 /* BuddyGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuddyGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F822A01CF3E20C00DF0D19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84F822A91CF3E20C00DF0D19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				84F822AD1CF3E20C00DF0D19 /* LaunchScreen.storyboard */,
 				84F822B01CF3E20C00DF0D19 /* Info.plist */,
 				84F822D21CF3E2F200DF0D19 /* readme.md */,
+				844FF5DC1D012116009F8BE3 /* test.mp3 */,
 				84F822D61CFD2D9B00DF0D19 /* test.wav */,
 				84F822D41CFCEC2E00DF0D19 /* alarm.swift */,
 			);
@@ -238,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844FF5DD1D012116009F8BE3 /* test.mp3 in Resources */,
 				84F822D71CFD2D9B00DF0D19 /* test.wav in Resources */,
 				84F822AF1CF3E20C00DF0D19 /* LaunchScreen.storyboard in Resources */,
 				84F822AC1CF3E20C00DF0D19 /* Assets.xcassets in Resources */,

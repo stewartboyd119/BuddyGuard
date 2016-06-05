@@ -11,20 +11,28 @@ import AVFoundation
 
 class MainViewController: UIViewController, UINavigationControllerDelegate, AVAudioPlayerDelegate {
 
+    var alarm : Alarm!;
+
     @IBOutlet weak var testButton: UIButton!
     @IBAction func testClick(sender: UIButton) {
         print("The test button was clicked")
-        let alarm = Alarm(volume: 1.0);
+        
+        do{
+            alarm = try Alarm();
+        }
+        catch _ {
+            print("alarm fucked up")
+        }
         let played = alarm.play()
         print("The sound was able to play \(played)")
         print("Completed playing")
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         navigationController?.delegate = self;
-
         
     }
 
