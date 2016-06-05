@@ -9,7 +9,9 @@
 import UIKit
 import AVFoundation
 
-class MainViewController: UIViewController, UINavigationControllerDelegate, AVAudioPlayerDelegate {
+class MainViewController: UIViewController ,UINavigationControllerDelegate, AVAudioPlayerDelegate {
+    
+    let MyKeychainWrapper = KeychainWrapper()
 
     var alarm : Alarm!;
 
@@ -27,13 +29,29 @@ class MainViewController: UIViewController, UINavigationControllerDelegate, AVAu
         print("The sound was able to play \(played)")
         print("Completed playing")
     }
+    
+    @IBAction func lockButton(sender: UIButton) {
+        
+        //check if user: default has a password.  probably best to just save pw to "default" as user doesn't need personal account.
+        let hasPassword = NSUserDefaults.standardUserDefaults().boolForKey("default")
+        
+        //create alert if doesn't exist.  will probably segue into createPw view conntroller.
+        if hasPassword == false{
+            let alert = UIAlertController(title: "Error", message: "You must create a password in order to activate the lock.", preferredStyle: .Alert)
+            let alertAction  = UIAlertAction(title: "OK", style: .Default, handler: nil)
+            alert.addAction(alertAction)
+            self.presentViewController(alert, animated: true, completion: nil)
+            
+        }
+        performSegueWithIdentifier("armLock", sender: self)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         navigationController?.delegate = self;
-        
+     
     }
 
     override func didReceiveMemoryWarning() {

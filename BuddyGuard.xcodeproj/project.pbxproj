@@ -18,6 +18,7 @@
 		84F822D51CFCEC2E00DF0D19 /* alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F822D41CFCEC2E00DF0D19 /* alarm.swift */; };
 		84F822D71CFD2D9B00DF0D19 /* test.wav in Resources */ = {isa = PBXBuildFile; fileRef = 84F822D61CFD2D9B00DF0D19 /* test.wav */; };
 		D094A8261CF7BF64000E5A68 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D094A8251CF7BF64000E5A68 /* MainViewController.swift */; };
+		D0CA70911D00E1DF001D6D55 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D0CA70901D00E1DF001D6D55 /* KeychainWrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,9 @@
 		84F822D41CFCEC2E00DF0D19 /* alarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = alarm.swift; sourceTree = "<group>"; };
 		84F822D61CFD2D9B00DF0D19 /* test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = test.wav; sourceTree = "<group>"; };
 		D094A8251CF7BF64000E5A68 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		D0CA708E1D00E1DE001D6D55 /* BuddyGuard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BuddyGuard-Bridging-Header.h"; sourceTree = "<group>"; };
+		D0CA708F1D00E1DF001D6D55 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		D0CA70901D00E1DF001D6D55 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 		84F8229F1CF3E20C00DF0D19 /* BuddyGuard */ = {
 			isa = PBXGroup;
 			children = (
+				D0CA708F1D00E1DF001D6D55 /* KeychainWrapper.h */,
+				D0CA70901D00E1DF001D6D55 /* KeychainWrapper.m */,
 				84F822A81CF3E20C00DF0D19 /* Main.storyboard */,
 				84F822A01CF3E20C00DF0D19 /* AppDelegate.swift */,
 				D094A8251CF7BF64000E5A68 /* MainViewController.swift */,
@@ -115,6 +121,7 @@
 				844FF5DC1D012116009F8BE3 /* test.mp3 */,
 				84F822D61CFD2D9B00DF0D19 /* test.wav */,
 				84F822D41CFCEC2E00DF0D19 /* alarm.swift */,
+				D0CA708E1D00E1DE001D6D55 /* BuddyGuard-Bridging-Header.h */,
 			);
 			path = BuddyGuard;
 			sourceTree = "<group>";
@@ -274,6 +281,7 @@
 				84F822D31CF3E2F200DF0D19 /* readme.md in Sources */,
 				84F822A11CF3E20C00DF0D19 /* AppDelegate.swift in Sources */,
 				84F822D51CFCEC2E00DF0D19 /* alarm.swift in Sources */,
+				D0CA70911D00E1DF001D6D55 /* KeychainWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,10 +425,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BuddyGuard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.BuddyGuard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BuddyGuard/BuddyGuard-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -428,10 +439,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BuddyGuard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.BuddyGuard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "BuddyGuard/BuddyGuard-Bridging-Header.h";
 			};
 			name = Release;
 		};
