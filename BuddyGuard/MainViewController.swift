@@ -14,19 +14,23 @@ class MainViewController: UIViewController ,UINavigationControllerDelegate, AVAu
     let MyKeychainWrapper = KeychainWrapper()
 
     var alarm : Alarm!;
-
+    var fader : Fader!;
     @IBOutlet weak var testButton: UIButton!
     @IBAction func testClick(sender: UIButton) {
         print("The test button was clicked")
-        
+        let fpath = NSBundle.mainBundle().pathForResource("test", ofType: "mp3")
         do{
-            alarm = try Alarm();
+            alarm = try Alarm(fpath : fpath, volume : 0.0);
         }
         catch _ {
             print("alarm fucked up")
         }
-        let played = alarm.play()
-        print("The sound was able to play \(played)")
+        fader = Fader(player: alarm.audio_player)
+        alarm.play_with_fade(fader, onFinished: alarm.stop_if_true)
+        //fader.fade(fromVolume: 0.0, toVolume: 1.0);
+        //fader.fade(onFinished: alarm.stop_if_true)
+        
+        //print("The sound was able to play \(played)")
         print("Completed playing")
     }
     
