@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0fq-si-2ch">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0fq-si-2ch">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -28,7 +28,7 @@
         <!--CreatePw-->
         <scene sceneID="56c-dv-ngr">
             <objects>
-                <viewController title="CreatePw" id="ZsW-Bs-JC5" sceneMemberID="viewController">
+                <viewController title="CreatePw" id="ZsW-Bs-JC5" customClass="CreatePwViewController" customModule="BuddyGuard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lDd-FF-Rfn"/>
                         <viewControllerLayoutGuide type="bottom" id="pEz-uw-JKY"/>
@@ -46,10 +46,14 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EsS-0N-eGj">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EsS-0N-eGj">
                                         <rect key="frame" x="0.0" y="46" width="294" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                        <connections>
+                                            <action selector="writePw:" destination="ZsW-Bs-JC5" eventType="touchUpInside" id="e8e-bN-wns"/>
+                                        </connections>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -59,6 +63,9 @@
                                 <state key="normal" title="Create Password">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="savePw:" destination="ZsW-Bs-JC5" eventType="touchUpInside" id="Hqz-fG-r6n"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -68,8 +75,13 @@
                             <constraint firstItem="2vn-69-g9K" firstAttribute="centerX" secondItem="yAa-z5-aMY" secondAttribute="centerX" id="LVH-Dv-kFB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="password" destination="EsS-0N-eGj" id="ks1-ED-8tq"/>
+                        <segue destination="MTy-1z-eaZ" kind="unwind" identifier="unwindToMain" unwindAction="unwindToMain:" id="VgM-qb-tLB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="43j-ZT-UJH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="MTy-1z-eaZ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1027" y="-962"/>
         </scene>
@@ -111,11 +123,23 @@
                                     <action selector="testClick:" destination="f0Z-Rd-XW3" eventType="touchUpInside" id="TPZ-OP-NNk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJb-oi-cGB">
+                                <rect key="frame" x="20" y="544" width="160" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Create Password">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZsW-Bs-JC5" kind="show" identifier="createPwSegue" id="kEA-06-HgZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="HgZ-Hn-jR4" firstAttribute="centerX" secondItem="izw-Nb-Bfh" secondAttribute="centerX" id="451-eE-mw1"/>
+                            <constraint firstItem="KNI-WC-nzq" firstAttribute="top" secondItem="DJb-oi-cGB" secondAttribute="bottom" constant="20" id="Jxf-Bx-HyF"/>
                             <constraint firstItem="HgZ-Hn-jR4" firstAttribute="top" secondItem="LAn-Il-l8e" secondAttribute="bottom" constant="122" id="NRv-4V-cHM"/>
+                            <constraint firstItem="DJb-oi-cGB" firstAttribute="leading" secondItem="izw-Nb-Bfh" secondAttribute="leadingMargin" id="Zt2-aV-8b5"/>
                             <constraint firstItem="KNI-WC-nzq" firstAttribute="top" secondItem="Ho1-sB-QEG" secondAttribute="bottom" constant="20" id="lia-HP-X23"/>
                             <constraint firstItem="Ho1-sB-QEG" firstAttribute="trailing" secondItem="izw-Nb-Bfh" secondAttribute="trailingMargin" id="nuD-lQ-Gtp"/>
                         </constraints>
@@ -123,6 +147,7 @@
                     <navigationItem key="navigationItem" id="cxC-cO-nMu"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="createPwButton" destination="DJb-oi-cGB" id="ryW-2f-OH9"/>
                         <outlet property="testButton" destination="rsG-3T-oLp" id="aTe-db-dy4"/>
                     </connections>
                 </viewController>

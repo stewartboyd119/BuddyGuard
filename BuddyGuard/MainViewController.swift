@@ -16,6 +16,7 @@ class MainViewController: UIViewController ,UINavigationControllerDelegate, AVAu
     var alarm : Alarm!;
     var fader : Fader!;
     @IBOutlet weak var testButton: UIButton!
+    @IBOutlet weak var createPwButton: UIButton!
     @IBAction func testClick(sender: UIButton) {
         print("The test button was clicked")
         let fpath = NSBundle.mainBundle().pathForResource("test", ofType: "mp3")
@@ -36,18 +37,16 @@ class MainViewController: UIViewController ,UINavigationControllerDelegate, AVAu
     
     @IBAction func lockButton(sender: UIButton) {
         
-        //check if user: default has a password.  probably best to just save pw to "default" as user doesn't need personal account.
-        let hasPassword = NSUserDefaults.standardUserDefaults().boolForKey("default")
         
-        //create alert if doesn't exist.  will probably segue into createPw view conntroller.
-        if hasPassword == false{
+        //create alert password not created.
+        if !hasPw(){
             let alert = UIAlertController(title: "Error", message: "You must create a password in order to activate the lock.", preferredStyle: .Alert)
             let alertAction  = UIAlertAction(title: "OK", style: .Default, handler: nil)
             alert.addAction(alertAction)
             self.presentViewController(alert, animated: true, completion: nil)
             
         }
-        performSegueWithIdentifier("armLock", sender: self)
+        
     }
 
     override func viewDidLoad() {
@@ -69,11 +68,23 @@ class MainViewController: UIViewController ,UINavigationControllerDelegate, AVAu
     
     override func viewWillAppear(animated: Bool) {
         self.navigationController?.navigationBarHidden = true;
+        
+        if hasPw(){
+            createPwButton.hidden = true
+        }
+        
+    }
+    
+    // The following just checks to see if a password is made.
+    func hasPw() -> Bool{
+        //probably best to just save pw to "default" as user doesn't need personal account.
+        return NSUserDefaults.standardUserDefaults().objectForKey("default") != nil
     }
 
     /*
     // MARK: - Navigation
      
+    
     
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -82,6 +93,10 @@ class MainViewController: UIViewController ,UINavigationControllerDelegate, AVAu
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    @IBAction func unwindToMain(segue: UIStoryboardSegue){}
+    
     func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) {
         if (flag == true){
             print("Completed playing audio player");
